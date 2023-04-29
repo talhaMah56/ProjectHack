@@ -24,7 +24,7 @@ function App() {
       </header> */}
       <Routes>
         <Route path="/" element={<Hero />} exact />
-        <Route path="/coding-challenge/level-1" element={<CodingSection />} />
+        <Route path="/coding-challenge/level-1" element={<Level1 />} />
       </Routes>
     </div>
   );
