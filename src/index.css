@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-html {
-  background: linear-gradient(to bottom, #b197fc, #5f3dc4);
-}
-
 :root {
   --primary: #7048e8
   --tint-1: #9775fa

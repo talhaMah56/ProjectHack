@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import classes from "./Hero.module.css";
 
 export const Hero = () => {
@@ -29,7 +30,9 @@ export const Hero = () => {
         <h2>Project Info</h2>
       </section>
       <section className="hidden">
-        <button className={classes.button}>Break out</button>
+        <NavLink to="/coding-challenge">
+          <button className={classes.button}>Break out</button>
+        </NavLink>
       </section>
     </div>
   );
