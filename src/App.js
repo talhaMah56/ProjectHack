@@ -1,8 +1,8 @@
-import logo from './appstore.png';
-import './App.css';
+import { Hero } from "./HeroSection/Hero";
 
 function App() {
   return (
+<<<<<<< HEAD
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -25,6 +25,13 @@ function App() {
             </div>
           </div>
       </header>
+=======
+    <div>
+      {/* <header>
+        <p>BreakIn</p>
+      </header> */}
+      <Hero />
+>>>>>>> beb698777f8d2da5b4b3a2531bef278e2e7ad090
     </div>
   );
 }
