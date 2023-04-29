@@ -1,8 +1,8 @@
-import "./Level1.css"
+import "./Level1.module.css"
 
-import { Level1Modal } from "./Level-1/Level_1_modal";
+import { Level1Modal } from "./Level_1_modal";
 
-export const CodingSection = () => {
+export const Level1 = () => {
   return (
     <>
       <Level1Modal />

@@ -2,7 +2,7 @@
 import { Hero } from "./HeroSection/Hero";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import { CodingSection } from "./CodingSection/CodingSection";
+import { Level1 } from "./CodingSection/Level-1/Level1";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
       </header> */}
       <Routes>
         <Route path="/" element={<Hero />} exact />
-        <Route path="/coding-challenge" element={<CodingSection />} />
+        <Route path="/coding-challenge" element={<Level1 />} />
       </Routes>
     </div>
   );
