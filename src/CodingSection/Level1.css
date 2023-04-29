@@ -1,0 +1,13 @@
+.square {
+    height: 150px;
+    width: 25px;
+    background-color: #555;
+    position: absolute;
+    top: 50%;
+  }
+
+  .background {
+    background-color: aliceblue;
+    background-image: url("hero-img.png");
+    
+  }

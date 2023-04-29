@@ -22,12 +22,9 @@ export const Hero = () => {
       <section className={`${classes.welcome} hidden`}>
         <h1>Welcome to break In</h1>
         <img
-<<<<<<< HEAD
-          src={require("../imgs/hero-img.png")} alt = "icon with kids pictures"
-=======
           src={require("../imgs/hero-img.png")}
           alt="Lock"
->>>>>>> b673179912b4d5d5cdd2cacf39205233b988257a
+          
           className={classes.hero_img}
         />
       </section>
