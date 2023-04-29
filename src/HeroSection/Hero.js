@@ -24,6 +24,7 @@ export const Hero = () => {
         <img
           src={require("../imgs/hero-img.png")}
           alt="Lock"
+          
           className={classes.hero_img}
         />
       </section>
