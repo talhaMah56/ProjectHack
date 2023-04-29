@@ -1,9 +1,12 @@
-import { Level1Modal } from "./Level-1/Level_1_modal";
+import { Route, Routes } from "react-router-dom";
+import { Level1 } from "./Level-1/Level1";
 
 export const CodingSection = () => {
   return (
     <>
-      <Level1Modal />
+      <Routes>
+        <Route path="/" element={<Level1 />} />
+      </Routes>
     </>
   );
 };

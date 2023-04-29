@@ -31,7 +31,7 @@ export const Hero = () => {
         <h2>Project Info</h2>
       </section>
       <section className="hidden">
-        <NavLink to="/coding-challenge">
+        <NavLink to="/coding-challenge/level-1">
           <button className={classes.button}>Break out</button>
         </NavLink>
       </section>
