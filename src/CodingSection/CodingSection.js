@@ -1,7 +1,9 @@
+import Modal from "../UI/Modal";
+
 export const CodingSection = () => {
   return (
-    <div>
+    <Modal>
       <h1>Hello from coding section</h1>
-    </div>
+    </Modal>
   );
 };
