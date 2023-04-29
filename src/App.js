@@ -1,6 +1,8 @@
-import logo from './appstore.png';
+import logo from "./appstore.png";
 import { Hero } from "./HeroSection/Hero";
-import './App.css';
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import { CodingSection } from "./CodingSection/CodingSection";
 
 function App() {
   return (
@@ -8,21 +10,23 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <div className="App">
-            <header className="App-header">
+          <header className="App-header">
+            <div>
+              <span className="title">
                 <div>
-                  <span className="title">
-                    <div>
-                      <b>Break In</b>
-                    </div>
-                  </span>
+                  <b>Break In</b>
                 </div>
-            </header>
-            <div style={{ backgroundColor: "#8096c06e" }}>
+              </span>
             </div>
-          </div>
+          </header>
+          <div style={{ backgroundColor: "#8096c06e" }}></div>
+        </div>
       </header>
-        <Hero />
-      </div>
+      <Routes>
+        <Route path="/" element={<Hero />} exact />
+        <Route path="/coding-challenge" element={<CodingSection />} />
+      </Routes>
+    </div>
   );
 }
 
