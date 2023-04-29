@@ -23,6 +23,7 @@ export const Hero = () => {
         <h1>Welcome to break In</h1>
         <img
           src={require("../imgs/hero-img.png")}
+          alt="Lock"
           className={classes.hero_img}
         />
       </section>
