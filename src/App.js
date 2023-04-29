@@ -2,7 +2,7 @@
 import { Hero } from "./HeroSection/Hero";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import { CodingSection } from "./CodingSection/CodingSection";
+import { Level1 } from "./CodingSection/Level-1/Level1";
 
 function App() {
   return (
