@@ -4,5 +4,35 @@
   justify-content: center;
   min-height: 100vh;
   margin-bottom: 10px;
-  font-size: 5rem;
+  font-size: 4rem;
+  font-family: "Bruno Ace SC";
+}
+
+.welcome {
+  position: relative;
+}
+
+.hero_img {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  z-index: -1;
+}
+
+.button {
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-family: "Bruno Ace SC";
+  border-radius: 1rem;
+  border: none;
+  background-color: #fcc419;
+
+  transition: all 300ms;
+}
+.button:hover {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 0.4rem #fcc419;
+  color: #fff;
 }

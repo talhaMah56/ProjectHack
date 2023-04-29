@@ -18,14 +18,18 @@ export const Hero = () => {
   });
   return (
     <div className={classes.hero_section}>
-      <section className="hidden">
+      <section className={`${classes.welcome} hidden`}>
         <h1>Welcome to break In</h1>
+        <img
+          src={require("../imgs/hero-img.png")}
+          className={classes.hero_img}
+        />
       </section>
       <section className="hidden">
         <h2>Project Info</h2>
       </section>
       <section className="hidden">
-        <button>Break out</button>
+        <button className={classes.button}>Break out</button>
       </section>
     </div>
   );
