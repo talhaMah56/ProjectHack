@@ -15,6 +15,9 @@ function ModalOverlay(props) {
         alt="Monkey guide"
         className={classes.guide_img}
       />
+      <button onClick={props.hideModal} className={classes.close_button}>
+        Close
+      </button>
     </div>
   );
 }
@@ -26,7 +29,9 @@ function Modal(props) {
     <>
       {createPortal(<Backdrop hideModal={props.hideModal} />, portalElement)}
       {createPortal(
-        <ModalOverlay>{props.children}</ModalOverlay>,
+        <ModalOverlay hideModal={props.hideModal}>
+          {props.children}
+        </ModalOverlay>,
         portalElement
       )}
     </>

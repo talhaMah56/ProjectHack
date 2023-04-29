@@ -31,12 +31,39 @@
   font-family: "Bruno Ace SC";
   border-radius: 1rem;
   border: none;
-  background-color: #fcc419;
+  background-color: var(--yellow);
 
   transition: all 300ms;
 }
 .button:hover {
   background-color: transparent;
-  box-shadow: inset 0 0 0 0.4rem #fcc419;
+  box-shadow: inset 0 0 0 0.4rem var(--yellow);
   color: #fff;
+}
+
+.levels {
+  display: flex;
+  gap: 2rem;
+}
+
+.levels:nth-child(2) {
+  transition-delay: 200ms;
+}
+.levels:nth-child(3) {
+  transition-delay: 400ms;
+}
+.levels:nth-child(4) {
+  transition-delay: 600ms;
+}
+
+.level_box {
+  background-color: var(--yellow);
+  width: 10rem;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+.level_box p {
+  font-size: 1rem;
 }

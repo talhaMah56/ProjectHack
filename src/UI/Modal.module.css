@@ -28,6 +28,24 @@
   left: -40%;
 }
 
+.close_button {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 0.5rem 0rem;
+  font-family: "Bruno Ace SC";
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 0.5rem;
+
+  transition: all 300ms;
+}
+
+.close_button:hover {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 0.3rem var(--yellow);
+  color: var(--yellow);
+}
+
 @media (min-width: 768px) {
   .modal {
     width: 40rem;
