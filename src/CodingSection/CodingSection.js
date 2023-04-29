@@ -1,9 +1,9 @@
-import Modal from "../UI/Modal";
+import { Level1Modal } from "./Level-1/Level_1_modal";
 
 export const CodingSection = () => {
   return (
-    <Modal>
-      <h1>Hello from coding section</h1>
-    </Modal>
+    <>
+      <Level1Modal />
+    </>
   );
 };

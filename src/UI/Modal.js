@@ -10,6 +10,11 @@ function ModalOverlay(props) {
   return (
     <div className={classes.modal}>
       <div className={classes.content}>{props.children}</div>
+      <img
+        src={require("../imgs/guide.png")}
+        alt="Monkey guide"
+        className={classes.guide_img}
+      />
     </div>
   );
 }
