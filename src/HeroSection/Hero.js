@@ -24,7 +24,6 @@ export const Hero = () => {
         <img
           src={require("../imgs/hero-img.png")}
           alt="Lock"
-          
           className={classes.hero_img}
         />
       </section>
@@ -32,7 +31,7 @@ export const Hero = () => {
         <h2>Project Info</h2>
       </section>
       <section className="hidden">
-        <NavLink to="/coding-challenge/level-1">
+        <NavLink to="/coding-challenge">
           <button className={classes.button}>Break out</button>
         </NavLink>
       </section>
