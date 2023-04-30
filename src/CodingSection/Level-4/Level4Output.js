@@ -3,7 +3,6 @@ import classes from "./Level4.module.css";
 export const Level4Output = () => {
   return (
     <div>
-      <p>This is level4 Output</p>
       <div className={classes.map}>
         <div className={classes.mapBox}>
           <img
