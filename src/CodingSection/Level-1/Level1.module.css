@@ -1,72 +1,41 @@
 .bar {
-    display: flex;
-    height: 160px;
-    width: 15px;
-    background-color: #555;
-    position: relative;
+  display: flex;
+  height: 63vh;
+  width: 15px;
+  background-color: #555;
+  position: relative;
+  z-index: 3;
 }
 
 .container {
   display: flex;
-  flex-wrap: wrap;
-  background-color: transparent;
+  background-color: var(--yellow);
   border: 15px solid #555;
-  border-color:#555;
-  width: 165px;
+  border-color: #555;
+  width: 40vw;
+  height: 63vh;
+  align-self: end;
   justify-content: space-evenly;
-  position: absolute;
-  left: 50%;
-  top: 50%;
 }
 
-.codeBox {
+.level_1 {
   display: flex;
-  background-color:#ccc;
-  font-family: "Lucida Console", "Courier New", monospace;;
-  border-radius: 0.2rem;
-  padding: 5px;
-  border: none;
-
-}
-
-.background {
-  display: flex;
-  text-align: center;
   justify-content: center;
-  background-image: url("../../imgs/emptyRoom.jpg");
+  align-items: center;
+  width: 100vw;
+  gap: 5rem;
+  margin: 2rem 0;
 }
 
-
-.textbox {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: rgb(250, 250, 250);
-  border: 5px solid #000000;
-  width: 165px;
-  justify-content: space-evenly;
+.prisoner_img {
+  width: 25rem;
   position: absolute;
-  left: 20%;
-  top: 50%;
+  z-index: 2;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
 }
 
-
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.output_div {
+  position: relative;
 }

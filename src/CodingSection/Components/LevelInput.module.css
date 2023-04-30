@@ -1,0 +1,38 @@
+.button {
+  font-size: 0.8rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-family: "Bruno Ace SC";
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--yellow);
+
+  transition: all 300ms;
+}
+.button:hover {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 0.4rem var(--yellow);
+  color: #fff;
+}
+
+.input_actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  width: 40vw;
+}
+
+.input_actions span {
+  display: block;
+  font-size: 2rem;
+  margin-left: auto;
+}
+
+.correct svg {
+  color: green;
+}
+
+.wrong svg {
+  color: red;
+}

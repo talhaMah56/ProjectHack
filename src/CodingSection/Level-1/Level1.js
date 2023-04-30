@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { Level1Input } from "./Level1Input";
 import { Level1Modal } from "./Level1Modal";
 import { Level1Output } from "./Level1Output";
 import classes from "./Level1.module.css";
 import { NavigationTitle } from "../Components/NavigationTitle";
+import { LevelInput } from "../Components/LevelInput";
 
 export const Level1 = () => {
   const [isModalShown, setIsModalShown] = useState(true);
@@ -19,13 +19,9 @@ export const Level1 = () => {
         left_arrow_dest="/"
       />
       {isModalShown && <Level1Modal hideModal={hideModalHandler} />}
-      <Level1Input />
-      <Level1Output />
-      <div className={classes.container}>
-        <div className={classes.bar} style={{}}></div>
-        <div className={classes.bar} style={{}}></div>
-        <div className={classes.bar} style={{}}></div>
-        <div className={classes.bar} style={{}}></div>
+      <div className={classes.level_1}>
+        <LevelInput />
+        <Level1Output />
       </div>
     </>
   );
