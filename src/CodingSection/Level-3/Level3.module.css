@@ -1,0 +1,19 @@
+.codeBox {
+    display: flex;
+    background-color:#ccc;
+    font-family: "Lucida Console", "Courier New", monospace;;
+    border-radius: 0.2rem;
+    padding: 5px;
+    border: none;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--yellow);
+    border: 2px solid #555;
+    border-color: #555;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
