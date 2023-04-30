@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from 'react';
 import { Level1Modal } from "./Level1Modal";
 import { Level1Output } from "./Level1Output";
 import classes from "./Level1.module.css";
@@ -11,6 +11,13 @@ export const Level1 = () => {
   const hideModalHandler = () => {
     setIsModalShown(false);
   };
+
+  const [code, setCode] = useState("");
+
+  const handleEditorChange = (value) => {
+    setCode(value);
+  };
+
   return (
     <>
       <NavigationTitle
@@ -20,9 +27,10 @@ export const Level1 = () => {
       />
       {isModalShown && <Level1Modal hideModal={hideModalHandler} />}
       <div className={classes.level_1}>
-        <LevelInput />
-        <Level1Output />
+        <LevelInput handleEditorChange={handleEditorChange} />
+        <Level1Output code={code} />
       </div>
+        <pre>{code}</pre>
     </>
   );
 };

@@ -11,6 +11,13 @@ export const Level3 = () => {
   const hideModalHandler = () => {
     setIsModalShown(false);
   };
+    
+  const [code, setCode] = useState("");
+
+  const handleEditorChange = (value) => {
+    setCode(value);
+  };
+
   return (
     <>
       <NavigationTitle
@@ -20,9 +27,10 @@ export const Level3 = () => {
       />
       {isModalShown && <Level3Modal hideModal={hideModalHandler} />}
       <div className={classes.level_1}>
-      <LevelInput />
+      <LevelInput handleEditorChange={handleEditorChange} />
       <Level3Output />
       </div>
+        <pre>{code}</pre>
     </>
   );
 };
