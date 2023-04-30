@@ -22,7 +22,7 @@ export const Level2 = () => {
   const starterCode = "Number = true\nBoolean = \"Hello\"\nString = 5"
 
   const checkInput = () => {
-    if (code === ("Number = 5\nBoolean = true\nString =\"Hello\"")) {
+    if (code === ("Number = 5\nBoolean = true\nString = \"Hello\"")) {
       return (
         <span className={classes.correct}>
           <ImCheckmark />
