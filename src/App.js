@@ -6,6 +6,7 @@ import { Level1 } from "./CodingSection/Level-1/Level1";
 import { Level2 } from "./CodingSection/Level-2/Level2";
 import { Level3 } from "./CodingSection/Level-3/Level3";
 import { Level4 } from "./CodingSection/Level-4/Level4";
+import { NotFound } from "./CodingSection/NotFound";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="level-2" element={<Level2 />} />
         <Route path="level-3" element={<Level3 />} />
         <Route path="level-4" element={<Level4 />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
