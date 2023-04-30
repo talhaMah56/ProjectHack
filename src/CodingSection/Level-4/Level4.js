@@ -8,6 +8,7 @@ import { ImCross, ImCheckmark } from "react-icons/im";
 
 export const Level4 = () => {
   const [isModalShown, setIsModalShown] = useState(true);
+  const [correct, setCorect] = useState(false);
 
   const hideModalHandler = () => {
     setIsModalShown(false);
@@ -20,6 +21,7 @@ export const Level4 = () => {
   };
 const checkInput = () => {
     if (code.includes("Move") && (code.match(/"/g) || []).length === 2 && (code.includes("("))) {
+      setCorect(true)
       return (
         <span className={classes.correct}>
           <ImCheckmark />
@@ -33,6 +35,7 @@ const checkInput = () => {
           <ImCross />
           <h2>Check your if you have two Parentheses the double quotes, and the write Function Move</h2>
         </span>
+        
       );
     }
   };
@@ -55,7 +58,7 @@ const checkInput = () => {
         </span> */}
 
         <LevelInput handleEditorChange={handleEditorChange} GivenCode={""}/>
-      <Level4Output />
+      <Level4Output corectness={correct}/>
       </div>
         <pre>{code}</pre>
     </>
