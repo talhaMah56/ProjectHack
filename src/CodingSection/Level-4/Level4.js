@@ -8,7 +8,8 @@ import { ImCross, ImCheckmark } from "react-icons/im";
 
 export const Level4 = () => {
   const [isModalShown, setIsModalShown] = useState(true);
-  const [correct, setCorect] = useState(false);
+
+  let ab = false;
 
   const hideModalHandler = () => {
     setIsModalShown(false);
@@ -19,23 +20,24 @@ export const Level4 = () => {
   const handleEditorChange = (value) => {
     setCode(value);
   };
-const checkInput = () => {
-    if (code.includes("Move") && (code.match(/"/g) || []).length === 2 && (code.includes("("))) {
-      setCorect(true)
-      return (
-        <span className={classes.correct}>
-          <ImCheckmark />
-          <h2>Excellent Work, Ace escaped the building</h2>
-        </span>
 
-);
+  const checkInput = () => {
+    if (code.includes("Move") && (code.match(/"/g) || []).length === 2 && (code.includes("("))) {
+      ab = !ab
+      return (
+        <div>
+          <span className={classes.correct}>
+            <ImCheckmark />
+            <h2>Excellent Work, Ace escaped the building</h2>
+          </span>
+        </div>
+      );
     } else {
       return (
         <span className={classes.wrong}>
           <ImCross />
           <h2>Check your if you have two Parentheses the double quotes, and the write Function Move</h2>
         </span>
-        
       );
     }
   };
@@ -58,7 +60,7 @@ const checkInput = () => {
         </span> */}
 
         <LevelInput handleEditorChange={handleEditorChange} GivenCode={""}/>
-      <Level4Output corectness={correct}/>
+        <Level4Output corectness={ab}/>
       </div>
         <pre>{code}</pre>
     </>
