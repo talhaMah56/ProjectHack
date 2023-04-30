@@ -64,7 +64,7 @@ export const Hero = () => {
       </section>
       <section>
         <div className="hidden">
-          <NavLink to="/coding-challenge/level-1">
+          <NavLink to="/level-1">
             <button className={classes.button}>Break out</button>
           </NavLink>
         </div>
