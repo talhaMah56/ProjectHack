@@ -49,3 +49,10 @@
   position: relative;
 }
 
+.correct svg {
+  color: green;
+}
+
+.wrong svg {
+  color: red;
+}

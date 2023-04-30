@@ -4,6 +4,7 @@ import { Level3Output } from "./Level3Output";
 import classes from "./Level3.module.css";
 import { NavigationTitle } from "../Components/NavigationTitle";
 import { LevelInput } from "../Components/LevelInput";
+import { ImCross, ImCheckmark } from "react-icons/im";
 
 export const Level3 = () => {
   const [isModalShown, setIsModalShown] = useState(true);
@@ -11,7 +12,7 @@ export const Level3 = () => {
   const hideModalHandler = () => {
     setIsModalShown(false);
   };
-    
+  
   const [code, setCode] = useState("");
 
   const handleEditorChange = (value) => {
@@ -27,6 +28,13 @@ export const Level3 = () => {
       />
       {isModalShown && <Level3Modal hideModal={hideModalHandler} />}
       <div className={classes.level_1}>
+        <span className={classes.wrong}>
+          <ImCross />
+        </span>
+        <span className={classes.correct}>
+          <ImCheckmark />
+        </span>
+
       <LevelInput handleEditorChange={handleEditorChange} />
       <Level3Output />
       </div>

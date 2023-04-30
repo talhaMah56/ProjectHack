@@ -5,6 +5,7 @@ import classes from "./Level2.module.css";
 
 import { NavigationTitle } from "../Components/NavigationTitle";
 import { LevelInput } from "../Components/LevelInput";
+import { ImCross, ImCheckmark } from "react-icons/im";
 
 export const Level2 = () => {
   const [isModalShown, setIsModalShown] = useState(true);
@@ -28,6 +29,12 @@ export const Level2 = () => {
       />
       {isModalShown && <Level2Modal hideModal={hideModalHandler} />}
       <div className={classes.level_1}>
+        <span className={classes.wrong}>
+          <ImCross />
+        </span>
+        <span className={classes.correct}>
+          <ImCheckmark />
+        </span>
 
       <LevelInput handleEditorChange={handleEditorChange} />
       <Level2Output />
