@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Level3Modal } from "./Level3Modal";
 import { Level3Output } from "./Level3Output";
-import "./Level3.module.css";
+import classes from "./Level3.module.css";
 import { NavigationTitle } from "../Components/NavigationTitle";
 import { LevelInput } from "../Components/LevelInput";
 
@@ -19,8 +19,10 @@ export const Level3 = () => {
         left_arrow_dest="/level-2"
       />
       {isModalShown && <Level3Modal hideModal={hideModalHandler} />}
+      <div className={classes.level_1}>
       <LevelInput />
       <Level3Output />
+      </div>
     </>
   );
 };

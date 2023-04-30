@@ -1,8 +1,41 @@
-.codeBox {
-    display: flex;
-    background-color:#ccc;
-    font-family: "Lucida Console", "Courier New", monospace;;
-    border-radius: 0.2rem;
-    padding: 5px;
-    border: none;
+.bar {
+  display: flex;
+  height: 63vh;
+  width: 15px;
+  background-color: #555;
+  position: relative;
+  z-index: 3;
+}
+
+.container {
+  display: flex;
+  background-color: var(--yellow);
+  border: 15px solid #555;
+  border-color: #555;
+  width: 40vw;
+  height: 63vh;
+  align-self: end;
+  justify-content: space-evenly;
+}
+
+.level_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  gap: 5rem;
+  margin: 2rem 0;
+}
+
+.prisoner_img {
+  width: 25rem;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+}
+
+.output_div {
+  position: relative;
 }
