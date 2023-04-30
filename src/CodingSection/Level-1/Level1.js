@@ -18,7 +18,24 @@ export const Level1 = () => {
   const handleEditorChange = (value) => {
     setCode(value);
   };
+const checkInput = () => {
+    if (code.includes("speak") && (code.match(/"/g) || []).length === 2 && (code.includes("(") || code.includes(")"))) {
+      return (
+        <span className={classes.correct}>
+          <ImCheckmark />
+          <h2>"Excellent Work, but unfortunately nobody could heard him, let move to Level 2 "</h2>
+        </span>
 
+);
+    } else {
+      return (
+        <span className={classes.wrong}>
+          <ImCross />
+          <h2>Check your if you have two Parentheses the double quotes and speak function</h2>
+        </span>
+      );
+    }
+  };
   return (
     <>
       <NavigationTitle
@@ -27,18 +44,21 @@ export const Level1 = () => {
         left_arrow_dest="/"
       />
       {isModalShown && <Level1Modal hideModal={hideModalHandler} />}
-      <div className={classes.level_1}>        
-        <span className={classes.wrong}>
+                  {checkInput()}
+
+      <div className={classes.level_1}>  
+            {/* {checkInput()} */}
+      
+        {/* <span className={classes.wrong}>
           <ImCross />
         </span>
         <span className={classes.correct}>
           <ImCheckmark />
-        </span>
+        </span> */}
 
         <LevelInput handleEditorChange={handleEditorChange} />
         <Level1Output code={code} />
       </div>
-        <pre>{code}</pre>
     </>
   );
 };
