@@ -18,6 +18,24 @@ export const Level4 = () => {
   const handleEditorChange = (value) => {
     setCode(value);
   };
+const checkInput = () => {
+    if (code.includes("Move") && (code.match(/"/g) || []).length === 2 && (code.includes("("))) {
+      return (
+        <span className={classes.correct}>
+          <ImCheckmark />
+          <h2>"Excellent Work, Ace escaped the building"</h2>
+        </span>
+
+);
+    } else {
+      return (
+        <span className={classes.wrong}>
+          <ImCross />
+          <h2>Check your if you have two Parentheses the double quotes, and the write Function Move</h2>
+        </span>
+      );
+    }
+  };
 
   return (
     <>
@@ -27,15 +45,16 @@ export const Level4 = () => {
         left_arrow_dest="/level-3"
       />
       {isModalShown && <Level4Modal hideModal={hideModalHandler} />}
+      {checkInput()}
       <div className={classes.level_1}>
-        <span className={classes.wrong}>
+        {/* <span className={classes.wrong}>
           <ImCross />
         </span>
         <span className={classes.correct}>
           <ImCheckmark />
-        </span>
+        </span> */}
 
-      <LevelInput handleEditorChange={handleEditorChange} />
+        <LevelInput handleEditorChange={handleEditorChange} GivenCode={""}/>
       <Level4Output />
       </div>
         <pre>{code}</pre>

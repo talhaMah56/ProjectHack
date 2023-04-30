@@ -12,6 +12,14 @@ export const Level3Modal = ({ hideModal }) => {
       </p>
       <p>{a}</p>
       <div className={classes.box}>(6+3*(2*8)/4+5%7)*150</div>
+            <span>
+        <div className={classes.codeBox}>Print</div>
+        <p>
+          This is a Print function, use it to try out different password combination
+          <br></br>Example: Print("Hello World")
+        </p>
+      </span>
+
     </Modal>
   );
 };

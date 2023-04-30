@@ -23,7 +23,7 @@ const checkInput = () => {
       return (
         <span className={classes.correct}>
           <ImCheckmark />
-          <h2>"Excellent Work, but unfortunately nobody could heard him, let move to Level 2 "</h2>
+          <h2>Excellent Work, but unfortunately nobody could heard him, lets move to Level 2</h2>
         </span>
 
 );
@@ -43,8 +43,9 @@ const checkInput = () => {
         right_arrow_dest="/level-2"
         left_arrow_dest="/"
       />
-      {isModalShown && <Level1Modal hideModal={hideModalHandler} />}
                   {checkInput()}
+
+      {isModalShown && <Level1Modal hideModal={hideModalHandler} />}
 
       <div className={classes.level_1}>  
             {/* {checkInput()} */}
@@ -56,7 +57,7 @@ const checkInput = () => {
           <ImCheckmark />
         </span> */}
 
-        <LevelInput handleEditorChange={handleEditorChange} />
+        <LevelInput handleEditorChange={handleEditorChange} GivenCode={""}/>
         <Level1Output code={code} />
       </div>
     </>

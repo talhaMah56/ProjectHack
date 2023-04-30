@@ -19,6 +19,26 @@ export const Level2 = () => {
   const handleEditorChange = (value) => {
     setCode(value);
   };
+  const starterCode = "Number = true\nBoolean = \"Hello\"\nString = 5"
+
+  const checkInput = () => {
+    if (code === ("Number = 5\nBoolean = true\nString =\"Hello\"")) {
+      return (
+        <span className={classes.correct}>
+          <ImCheckmark />
+          <h2>Excellent Work, Ace is free from the cage!, lets move to Level 3</h2>
+        </span>
+
+);
+    } else {
+      return (
+        <span className={classes.wrong}>
+          <ImCross />
+          <h2>Check your types</h2>
+        </span>
+      );
+    }
+  };
 
   return (
     <>
@@ -28,15 +48,11 @@ export const Level2 = () => {
         left_arrow_dest="/level-1"
       />
       {isModalShown && <Level2Modal hideModal={hideModalHandler} />}
-      <div className={classes.level_1}>
-        <span className={classes.wrong}>
-          <ImCross />
-        </span>
-        <span className={classes.correct}>
-          <ImCheckmark />
-        </span>
+        {checkInput()}
 
-      <LevelInput handleEditorChange={handleEditorChange} />
+      <div className={classes.level_1}>
+
+        <LevelInput handleEditorChange={handleEditorChange} GivenCode={starterCode}/>
       <Level2Output />
       </div>
         <pre>{code}</pre>
