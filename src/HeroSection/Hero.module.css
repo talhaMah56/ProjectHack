@@ -46,13 +46,13 @@
   gap: 2rem;
 }
 
-.levels:nth-child(2) {
+.level_box:nth-child(2) {
   transition-delay: 200ms;
 }
-.levels:nth-child(3) {
+.level_box:nth-child(3) {
   transition-delay: 400ms;
 }
-.levels:nth-child(4) {
+.level_box:nth-child(4) {
   transition-delay: 600ms;
 }
 
