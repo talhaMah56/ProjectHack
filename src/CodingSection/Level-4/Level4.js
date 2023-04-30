@@ -23,7 +23,7 @@ const checkInput = () => {
       return (
         <span className={classes.correct}>
           <ImCheckmark />
-          <h2>"Excellent Work, Ace escaped the building"</h2>
+          <h2>Excellent Work, Ace escaped the building</h2>
         </span>
 
 );

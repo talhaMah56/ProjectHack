@@ -23,7 +23,7 @@ const checkInput = () => {
       return (
         <span className={classes.correct}>
           <ImCheckmark />
-          <h2>"Excellent Work, Now Ace can move, lets move to Level 4 "</h2>
+          <h2>Excellent Work, Now Ace can move, lets move to Level 4</h2>
         </span>
 
 );
@@ -54,7 +54,7 @@ const checkInput = () => {
         <span className={classes.correct}>
           <ImCheckmark />
         </span> */}
-      <LevelInput handleEditorChange={handleEditorChange} />
+        <LevelInput handleEditorChange={handleEditorChange} GivenCode={""}/>
       <Level3Output />
 
       </div>
