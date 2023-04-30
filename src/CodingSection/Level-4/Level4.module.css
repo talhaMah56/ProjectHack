@@ -16,6 +16,22 @@
     border: none;
 }
 
+.map {
+  display: flex;
+  flex-direction: row;
+}
+
+.mapBox {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #a0a0a0;
+  border: 2px solid #555;
+  border-color: #555;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
 .container {
   display: flex;
   background-color: var(--yellow);
@@ -37,12 +53,8 @@
 }
 
 .prisoner_img {
-  width: 25rem;
-  position: absolute;
-  z-index: 2;
-  left: 50%;
-  bottom: 5%;
-  transform: translateX(-50%);
+  width: 3rem;
+  position: relative;
 }
 
 .output_div {
